@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9bb344fd18.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header__container">
+            <a href="/" class="header__title">
+                <h2><span>Dev</span> César Ávila</h2>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__menu menu-hidden">
+                    <li class="header__menu-item">
+                        <a class="header__link" href="#">Inicio</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__link" href="#">Sobre Mí</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__link" href="#">Proyectos</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <button onclick="toggleMenu()" class="header__button"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__text">
+                <p>¡Hola! Soy César Ávila</p>
+                <h1>Ingeniero Electrónico y Desarrollador Web <span>Front-end</span></h1>
+                <p>Creo interfaces web que no solo funcionan, sino que conectan con el usuario y hacen la diferencia en
+                    su experiencia digital</p>
+                <div class="hero__buttons">
+                    <a class="btn">Descargar CV</a>
+                    <a class="btn btn-secondary">Contáctame</a>
+                </div>
+            </div>
+            <div class="hero__img">
+                <img src="img/profile.jpeg" alt="Foto de perfil">
+            </div>
+        </section>
+
+        <section class="about">         
+            <h2 class="about__title">Sobre Mí</h2>   
+            <div class="about__content">                
+                <p class="about__description">
+                    Soy desarrollador Front-End con formación en Ingeniería Electrónica y un fuerte interés por la
+                    tecnología, el diseño web y la experiencia de usuario. Me especializo en construir interfaces
+                    modernas, funcionales y accesibles, y estoy en constante aprendizaje para mantenerme actualizado con
+                    las herramientas y tendencias del desarrollo web.
+
+                    Me considero una persona comprometida, curiosa y enfocada en seguir creciendo profesionalmente.
+                    Busco participar en proyectos que me reten, me aporten experiencia real y me permitan seguir consolidando mi carrera en el sector tecnológico.
+                </p>
+            </div>
+
+            <h2 class="about__skills-title">Mis Habilidades Técnicas</h2>
+            <div class="about__skills">               
+                <ul class="about__skills-list">
+                    <li class="about__skills-item">
+                        <i class="fa-brands fa-js" style="color:#F7DF1E"></i>
+                        <span>JavaScript</span>
+                    </li>
+                    <li class="about__skills-item">
+                        <img src="assets/icons/typescript_icon.svg" height="48px">
+                        <span>TypeScript</span>
+                    </li>
+                    <li class="about__skills-item">
+                        <i class="fa-brands fa-react" style="color: #58c4dc"></i>
+                        <span>React</span>
+                    </li>
+                    <li class="about__skills-item">
+                        <i class="fab fa-node-js skill-icon" style="color:#339933"></i>
+                        <span>Node.js</span>
+                    </li>
+                    <li class="about__skills-item">
+                        <img src="assets/icons/postgresql_icon.svg" height="48px">                        
+                        <span>PostgreSQL</span>
+                    </li>
+                    <li class="about__skills-item">
+                        <img src="assets/icons/mongodb_icon.svg" height="48px">                        
+                        <span>MongoDB</span>
+                    </li>
+                    <li class="about__skills-item">
+                        <i class="fa-brands fa-html5" style="color:#E34F26"></i>
+                        <span>HTML</span>
+                    </li>
+                    <li class="about__skills-item">
+                        <i class="fa-brands fa-css3-alt" style="color:#1572B6"></i>
+                        <span>CSS</span>
+                    </li>
+                    <li class="about__skills-item">
+                        <img src="assets/icons/tailwind_icon.svg" height="48px">                       
+                        <span>Tailwind</span>
+                    </li>
+                    <li class="about__skills-item">
+                        <i class="fa-brands fa-git-alt" style="color:#F05032"></i>
+                        <span>Git</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <!-- <div class="header__social">
+            <a class="header__social-link" href="#">O</a>
+            <a class="header__social-link" href="#">O</a>
+            <a class="header__social-link" href="#">O</a>
+        </div> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
