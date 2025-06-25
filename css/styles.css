@@ -425,5 +425,59 @@ section h2::after{
     }
 }
 
+/*------------------------------- CONTACT -------------------------------*/
+.contact__content{
+    width: 100%;
+}
+.contact__text{
+    padding-bottom: 2rem;
+}
+.contact__form{
+    max-width: 740px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+        
+}
+.contact__form-input,
+.contact__form-textarea{
+    all: unset;
+    padding: 1rem;
+    color: black; 
+    border-radius: 12px;
+    background-color: white;
+    border: 3px solid transparent;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.088);
+    transition: border 0.3s ease-in-out;
+}
+.contact__form-input:focus,
+.contact__form-textarea:focus{
+    border-color: var(--primary-dark);
+}
+.contact__form-input::placeholder,
+.contact__form-textarea::placeholder{
+    font-size: 0.9rem;
+}
+
+.contact__form-textarea{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    field-sizing: content;
+}
+
+@media (min-width: 740px) {
+    .contact__form{
+        background-color: var(--dark-light);
+        padding: 3rem 2rem;
+        border-radius: 20px;
+    }
+    .contact__form-btn{
+        margin-top: 1rem;
+    }
+        
+}
 
  

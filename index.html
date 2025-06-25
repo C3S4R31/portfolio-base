@@ -245,7 +245,8 @@
                         <div class="list__description">
                             <h3>🔥 Contador de Calorías</h3>
                             <p><b>Registro de calorías consumidas y quemadas.</b>
-                                Permite agregar, editar o eliminar entradas de alimentos y ejercicios, mostrando un resumen del balance calórico total.
+                                Permite agregar, editar o eliminar entradas de alimentos y ejercicios, mostrando un
+                                resumen del balance calórico total.
                             </p>
                         </div>
                         <div class="list__icons">
@@ -292,7 +293,8 @@
                         <div class="list__description">
                             <h3>🔌 Kit de Electrónica con Arduino</h3>
                             <p><b>Sitio educativo para aprender electrónica con Arduino UNO.</b>
-                                Explora conceptos clave de electrónica y programación a través de proyectos prácticos con la tarjeta Arduino UNO y los componentes incluidos en el Kit de la Gobernación de
+                                Explora conceptos clave de electrónica y programación a través de proyectos prácticos
+                                con la tarjeta Arduino UNO y los componentes incluidos en el Kit de la Gobernación de
                                 Boyacá.
                             </p>
                         </div>
@@ -303,6 +305,20 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2 class="contact__title">Contacto</h2>
+            <div class="contact__content">
+                <p class="contact__text">Complete el siguiente formulario y me pondré en contacto con usted lo antes
+                    posible.</p>
+                <form id="form" class="contact__form">
+                    <input class="contact__form-input" type="text" placeholder="Nombre" name="name" required>
+                    <input class="contact__form-input" type="text" placeholder="Email" name="email" required>
+                    <textarea class="contact__form-textarea" cols="1" rows="12" placeholder="Mensaje" name="text" required></textarea>
+                    <input class="btn contact__form-btn" type="submit" id="button" value="Enviar">                    
+                </form>
             </div>
         </section>
     </main>
@@ -316,6 +332,8 @@
             <a class="header__social-link" href="#">O</a>
         </div> -->
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('WQl2QJlbZx5bnqcw1')</script>
 </body>
 
 </html>
