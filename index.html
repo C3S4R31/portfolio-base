@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cesar Avila - Frontend Developer</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,9 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/9bb344fd18.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 
 <body>
+    <div id="particles-js"></div>
+
     <header>
         <div class="header__container">
             <a href="/" class="header__title">
@@ -23,16 +26,16 @@
             <nav class="header__nav">
                 <ul class="header__menu menu-hidden">
                     <li class="header__menu-item">
-                        <a class="header__link" href="#">Inicio</a>
+                        <a class="header__link" href="/">Inicio</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__link" href="#">Sobre Mí</a>
+                        <a class="header__link" href="#about">Sobre Mí</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__link" href="#">Proyectos</a>
+                        <a class="header__link" href="#projects">Proyectos</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__link" href="#">Contacto</a>
+                        <a class="header__link" href="#form">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -48,8 +51,8 @@
                 <p>Creo interfaces web que no solo funcionan, sino que conectan con el usuario y hacen la diferencia en
                     su experiencia digital</p>
                 <div class="hero__buttons">
-                    <a class="btn">Descargar CV</a>
-                    <a class="btn btn-secondary">Contáctame</a>
+                    <a class="btn" href="assets/pdf/CV_CésarÁvila.pdf" download="CV_CésarÁvila.pdf">Descargar CV</a>
+                    <a class="btn btn-secondary" href="#form">Contáctame</a>
                 </div>
             </div>
             <div class="hero__img">
@@ -57,7 +60,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <h2 class="about__title">Sobre Mí</h2>
             <div class="about__content">
                 <p class="about__description">
@@ -121,15 +124,15 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section id="projects" class="projects">
             <h2 class="projects__title">Proyectos</h2>
             <div class="projects__content">
                 <ul class="projects__list">
 
                     <li class="projects__list-item">
-                        <img class="projects__img" src="img/project_test.png" alt="">
+                        <img class="projects__img" src="img/project_uptask.png" alt="">
                         <div class="list__description">
-                            <h3>Uptask - Administrador de Tareas</h3>
+                            <h3><a href="https://up-task-frontend-orpin.vercel.app/" target="_blank">Uptask - Administrador de Tareas (Fullstack MERN)</a></h3>
                             <p><b>Proyecto en Desarrollo...</b></p>
                             <br>
                         </div>
@@ -143,9 +146,9 @@
                     </li>
 
                     <li class="projects__list-item">
-                        <img class="projects__img" src="img/project_test.png" alt="">
+                        <img class="projects__img" src="img/project_products.png" alt="">
                         <div class="list__description">
-                            <h3>📦 Administrador de Productos (Fullstack PERN)</h3>
+                            <h3><a href="https://rest-typescript-frontend-products.vercel.app/" target="_blank">📦 Administrador de Productos (Fullstack PERN)</a></h3>
                             <p><b>Gestión completa de productos con base de datos.</b>
                                 CRUD de productos conectados a PostgreSQL mediante una REST API. Proyecto Fullstack
                                 usando el stack PERN (PostgreSQL, Express, React, Node.js).
@@ -161,9 +164,9 @@
                     </li>
 
                     <li class="projects__list-item">
-                        <img class="projects__img" src="img/project_test.png" alt="">
+                        <img class="projects__img" src="img/project_coctails.png" alt="">
                         <div class="list__description">
-                            <h3>🍸 Buscador de Bebidas con IA</h3>
+                            <h3><a href="https://poetic-palmier-e717dc.netlify.app" target="_blank">🍸 Buscador de Bebidas con IA</a></h3>
                             <p><b>Explora recetas de bebidas por ingrediente o nombre.</b>
                                 Filtra bebidas, accede a sus instrucciones, imágenes e ingredientes. Incluye favoritos y
                                 un chatbot con IA para pedir recetas por texto.
@@ -177,9 +180,9 @@
                     </li>
 
                     <li class="projects__list-item">
-                        <img class="projects__img" src="img/project_test.png" alt="">
+                        <img class="projects__img" src="img/project_crypto.png" alt="">
                         <div class="list__description">
-                            <h3>💰 Cotizador de Criptomonedas</h3>
+                            <h3><a href="https://astonishing-gingersnap-c14402.netlify.app/" target="_blank">💰 Cotizador de Criptomonedas</a></h3>
                             <p><b>Consulta precios y variaciones de criptomonedas.</b>
                                 Permite cotizar en tiempo real las principales criptos, con datos de precios altos/bajos
                                 y variación diaria a través de una API.
@@ -193,9 +196,9 @@
                     </li>
 
                     <li class="projects__list-item">
-                        <img class="projects__img" src="img/project_test.png" alt="">
+                        <img class="projects__img" src="img/project_weather.png" alt="">
                         <div class="list__description">
-                            <h3>🌤️ Aplicación del Clima</h3>
+                            <h3><a href="https://magenta-centaur-75cf51.netlify.app/" target="_blank">🌤️ Aplicación del Clima</a></h3>
                             <p><b>Consulta el clima por ciudad en tiempo real.</b>
                                 Utiliza una API externa para mostrar la temperatura, condiciones y ubicación de manera
                                 rápida según el país y ciudad ingresados.
@@ -209,9 +212,9 @@
                     </li>
 
                     <li class="projects__list-item">
-                        <img class="projects__img" src="img/project_test.png" alt="">
+                        <img class="projects__img" src="img/project_vet.png" alt="">
                         <div class="list__description">
-                            <h3>🐾 Administrador de Pacientes</h3>
+                            <h3><a href="https://starlit-daffodil-623c37.netlify.app/" target="_blank">🐾 Administrador de Pacientes</a></h3>
                             <p><b>Sistema de gestión para pacientes veterinarios.</b>
                                 Agrega, edita y elimina pacientes con sus síntomas. Organiza y visualiza fácilmente la
                                 información de cada mascota.
@@ -225,9 +228,9 @@
                     </li>
 
                     <li class="projects__list-item">
-                        <img class="projects__img" src="img/project_test.png" alt="">
+                        <img class="projects__img" src="img/project_expenses.png" alt="">
                         <div class="list__description">
-                            <h3>📊 Control de Gastos</h3>
+                            <h3><a href="https://resonant-pika-1fb384.netlify.app/" target="_blank">📊 Control de Gastos</a></h3>
                             <p><b>Gestor de presupuestos y gastos personales.</b>
                                 Define un presupuesto y organiza tus gastos por categoría. Filtra, edita y visualiza el
                                 porcentaje gastado con una interfaz intuitiva.
@@ -241,9 +244,9 @@
                     </li>
 
                     <li class="projects__list-item">
-                        <img class="projects__img" src="img/project_test.png" alt="">
+                        <img class="projects__img" src="img/project_calories.png" alt="">
                         <div class="list__description">
-                            <h3>🔥 Contador de Calorías</h3>
+                            <h3><a href="https://clinquant-cactus-864b5c.netlify.app/" target="_blank">🔥 Contador de Calorías</a></h3>
                             <p><b>Registro de calorías consumidas y quemadas.</b>
                                 Permite agregar, editar o eliminar entradas de alimentos y ejercicios, mostrando un
                                 resumen del balance calórico total.
@@ -257,9 +260,9 @@
                     </li>
 
                     <li class="projects__list-item">
-                        <img class="projects__img" src="img/project_test.png" alt="">
+                        <img class="projects__img" src="img/project_rest.png" alt="">
                         <div class="list__description">
-                            <h3>💸 Calculadora de Propinas</h3>
+                            <h3><a href="https://gregarious-speculoos-66e1a0.netlify.app/" target="_blank">💸 Calculadora de Propinas</a></h3>
                             <p><b>Simulador de consumo y propina para restaurantes.</b>
                                 Gestiona artículos de un menú, calcula totales y propinas según el porcentaje
                                 seleccionado. Ideal para practicar lógica de formularios y actualización dinámica de
@@ -274,9 +277,9 @@
                     </li>
 
                     <li class="projects__list-item">
-                        <img class="projects__img" src="img/project_test.png" alt="">
+                        <img class="projects__img" src="img/project_guitar.png" alt="">
                         <div class="list__description">
-                            <h3>🛒 Tienda de Guitarras</h3>
+                            <h3><a href="https://majestic-custard-acef84.netlify.app/" target="_blank">🛒 Tienda de Guitarras</a></h3>
                             <p><b>Carrito de compras interactivo desarrollado con React.</b>
                                 Permite añadir, eliminar y modificar productos, actualizando automáticamente el total.
                                 Se enfoca en el manejo de state, props, useState y custom hooks.
@@ -289,9 +292,9 @@
                     </li>
 
                     <li class="projects__list-item">
-                        <img class="projects__img" src="img/project_test.png" alt="">
+                        <img class="projects__img" src="img/project_kit.png" alt="">
                         <div class="list__description">
-                            <h3>🔌 Kit de Electrónica con Arduino</h3>
+                            <h3><a href="https://rainbow-gnome-d39f57.netlify.app/" target="_blank">🔌 Kit de Electrónica con Arduino</a></h3>
                             <p><b>Sitio educativo para aprender electrónica con Arduino UNO.</b>
                                 Explora conceptos clave de electrónica y programación a través de proyectos prácticos
                                 con la tarjeta Arduino UNO y los componentes incluidos en el Kit de la Gobernación de
@@ -317,23 +320,25 @@
                     <input class="contact__form-input" type="text" placeholder="Nombre" name="name" required>
                     <input class="contact__form-input" type="text" placeholder="Email" name="email" required>
                     <textarea class="contact__form-textarea" cols="1" rows="12" placeholder="Mensaje" name="text" required></textarea>
-                    <input class="btn contact__form-btn" type="submit" id="button" value="Enviar">                    
+                    <input class="btn contact__form-btn" type="submit" id="button" value="Enviar">
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                    <script type="text/javascript">emailjs.init('WQl2QJlbZx5bnqcw1')</script>                    
                 </form>
             </div>
         </section>
+        
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        &#169;&#160<span id="current-year"></span>&#160| Desarrollado por César Ávila
     </footer>
-    <!-- <div class="header__social">
-            <a class="header__social-link" href="#">O</a>
-            <a class="header__social-link" href="#">O</a>
-            <a class="header__social-link" href="#">O</a>
-        </div> -->
     <script src="js/main.js"></script>
+    <script src="js/email.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/particles.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">emailjs.init('WQl2QJlbZx5bnqcw1')</script>
+    
 </body>
 
 </html>
